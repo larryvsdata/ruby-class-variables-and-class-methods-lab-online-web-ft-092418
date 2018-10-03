@@ -17,7 +17,7 @@ class Song
     end
     
     if ! @@artists.include? (artist)
-      @@artists.push(artist)
+      self.add_artist(artist)
     end
     
     

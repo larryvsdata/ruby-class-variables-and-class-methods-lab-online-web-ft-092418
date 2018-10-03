@@ -13,7 +13,7 @@ class Song
     @@count+=1
     
     if  ! @@genres.include? (genre)
-      @@genres.push(genre)
+      self.add_genre(genre)
     end
     
     if ! @@artists.include? (artist)
